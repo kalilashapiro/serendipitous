@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>serendipity</title>
+	<ul class="mainNav">
+		<li class="mainNavItem"><a href="index.html" class="mainNavLink">Home</a></li>
+		<div>
+			<li class="dropdown">
+				<a href="index.html" class="currentNavLinkDisabled">Projects</a>
+				<p class="menuSize">   </p>
+				<div class="dropdown-content">
+					<a href="spoons.html">Spoons</a>
+					<a href="when-i-was-little.html">When I Was Little</a>
+					<a href="major-key.html">Major Key</a>
+				</div>
+			</li>
+		</div>
+		<li class="mainNavItem"><a href="cv.html" class="mainNavLink">CV</a></li>
+<!-- 		<li class="mainNavItem"><a href="index.html" class="mainNavLink">Talks</a></li>
+ -->		<li class="mainNavItem"><a href="about.html" class="mainNavLink">About</a></li>
+<!-- 		<li class="mainNavItem"><a href="index.html" class="mainNavLink">Contact</a></li>
+ -->	</ul>
+	<p class="nameLogoBox"><a href="index.html" class="nameLogo"> KALILA</a><a href="index.html" class="nameLogo"> SHAPIRO</a></p>
+</head>
+
+<body>
+	
+	<div>
+	<img src="img/whenIWasLittle.png" alt="SpoonsLogo" class="pagePicture"></img>
+	<p class="bigFontProjecTitle">When I Was Little</p>
+	<p class="mediumTextSize">Created at MIT Reality Hack 2020</p>
+
+
+	<p class="paragraphText">Created at the MIT Reality Hack at the MIT Media Lab, "When I Was Little" is an immersive augmented reality and virtual reality story. It uses narrative to explore perspective and memory, and creates a new type of multiplayer, participatory storytelling. This project uses the Magic Leap One, Oculus Quest, Unity, DepthKit, the Azure Kinect, and NormCore. A trailer can be found at the bottom of the page.</p>
+
+	<br>
+
+	<iframe class="embeddedVideo" width="480" height="240" src="https://player.vimeo.com/video/385865311"></iframe>
+
+	<br>
+
+	<p class="paragraphHeader"><strong>My Role</strong></p>
+	<p class="paragraphText">I worked as a Unity developer, the main programmer for NormCore (communications between the Magic Leap and the Oculus Quest) and headset interactions, scriptwriter, DepthKit and volumetric filmmaker and director, and voice-over actor.</p>
+
+	<p class="paragraphHeader"><strong>Project Goals</strong></p>
+	<p class="paragraphText">We examined how different perspectives shape our memories and opinions of the past. Using the Oculus Quest and the Magic Leap One (linked through NormCore), we put users in the same story from a first-person view (VR in the Quest) and a third-person bird's eye view (AR in the Magic Leap). Our narrative was of a child with a learning disability being yelled at by a teacher. In the AR headset, it looks like the child is being disrespectful to a kind and hardworking teacher, but in the VR headset, it shows that the child wants to focus and do their best but is blocked by the barriers of their disorder. At the end, we prompt the AR and VR users to talk about what they saw and felt during the experience, with the hope of creating an open and honest dialogue about snap judgements and trying to get the full story.</p>
+
+
+	<p class="paragraphHeader"><strong>Prototyping</strong></p>
+	<p class="paragraphText">We started off knowing that we wanted to connect an AR and VR headset and play with human perspective and storytelling. Our narrative came from personal experience. Several members of the group struggle with ADHD and had similar stories of clashing with teachers that all the other students seemed to love. We wanted to use those memories to highlight how different frames of view affect our recall and opinions of situations. Using a Magic Leap One and an Oculus Quest, users would see the same story from different perspectives.</p>
+	<p class="paragraphText"><strong>Technical Development Process</strong> - Unlike past hackathon projects, this prototype was developed smoothly and in more depth than original planned. This was largely due to the wide breadth of skill and knowledge our team had as a collective. Together, we had all the prerequisite skills necessary in both tech and film to develop "When I Was Little" to its fullest extent within the limited time frame.  </p>
+	<p class="paragraphText">We had two development spaces in Unity at the same time - one for the Oculus Quest in VR and one for the Magic Leap in AR. My job was to link the two headsets so they witnessed the same scene at the same time from different vantage points. I used <a href="https://normcore.io/" class="inParagraph">NormCore</a>, a multiplayer SDK built for Unity, to accomplish this. Normally, this software is used for gaming (not storytelling) on the same headset, so I had to modify some details so it would run correctly. We wanted the AR user to be able to pass hidden items from their perspective into the VR user's perspective. I had to switch object ownership via NormCore to change who could interact with what object at which time. This was made all the more complicated due the specificity of Magic Leap's controller calls. In most situations, when a button is pressed on a controller, it uses Boolean logic (true or false logic) to determine if that action occurred. This is not the case with the Magic Leap trigger, which is tracked by how far the user pushed it (that is to say you cannot just simply write: "when the trigger is pressed" in your Unity script, unlike every other button for every other extended reality controller). Writing the NormCore functionality into the Magic Leap SDK was complicated, but doable. While it was completed by the end of the hackathon, we chose not to implement it because we did not have time to test for and then fix bugs.</p>
+	<p class="paragraphText"><strong>Film Development Process</strong> - In addition to needing high quality tech, we needed a strong story and visuals to go along with our Unity assets. I wrote the script, alternating between the perspectives of the two headsets. This proved to be a bigger challenge than expected because for each moment in each scene, I had to design what each user could see. Once that was done, it was time to record the narrative! I voiced the main character first-person perspective for the Oculus Quest. We used an Azure Kinect and DepthKit to capture a volumetric video of one of our teammates to be the "scary teacher". It was easily implemented into the scene without problems.</p>
+
+	<p class="paragraphHeader"><strong>Next Steps</strong></p>
+	<p class="paragraphText">Due to interest in the project from both hackathon attendees and Magic Leap, we want to expand on "When I Was Little" to be more detailed, exciting, and interactive.</p>
+
+	<ul class="bulletList">
+		<li>Implement the ability for the AR user to pass objects to the VR user</li>
+		<li>Allow the AR user to click on artifacts in the scene and get more information about them to deepen the storyline</li>
+		<li>3D-model new, custom assets for our narrative</li>
+		<li>More interaction between the AR and VR users in the final scene</li>
+	</ul>
+
+	<br></br>
+	<br></br>
+
+
+	
+</body>
+
+<footer>
+		<div>
+		<p class="footerText">Exploring and Creating</p>
+		<div class="linkBar">		
+			<img src="img/In-White-21.png" class="linkedInLogo" alt="LinkedIn Logo"> 
+			<br>
+			<p class="copywriteText">© 2021 by Kalila Shapiro</p>
+		</div>
+
+</footer>
+
+</html>

@@ -1,0 +1,368 @@
+/*Fonts*/
+
+@font-face {
+  font-family: 'Didot-BoldItalic';
+    src: url('fonts/DidotBoldItalic.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Didot-Bold';
+    src: url('fonts/DidotLTStdBold.otf');
+}
+
+@font-face {
+  font-family: 'Didot-Italic';
+    src: url('fonts/DidotLTStdItalic.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Didot-Medium';
+    src: url('fonts/DidotMedium.ttf');
+}
+
+@font-face {
+  font-family: 'Didot-Regular';
+    src: url('fonts/DidotRegular.ttf');
+}
+
+@font-face {
+  font-family: 'Futura-Light';
+    src: url('fonts/FuturaLight.ttf');
+/*    font-weight: 400;
+    font-style: normal;
+*/
+}
+
+
+@font-face {
+  font-family: 'Futura-SCTOT-Light';
+    src: url('fonts/FuturaSCTOTLight.ttf');
+}
+
+
+@font-face {
+  font-family: 'Futura-Std-Light';
+    src: url('fonts/FuturaStdLight.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Futura-Std-Light-Condensed';
+    src: url('fonts/FuturaStdLightCondensed.ttf');
+}
+
+/*Main Page*/
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*Main Navigation Bar*/
+
+ul.mainNav{
+	float: right;
+	margin-right: 240px;
+	display: flex;
+	gap: 2px;
+}
+
+li.mainNavItem{
+	list-style: none;
+ 	display: inline-block;
+}
+
+a.mainNavLink{
+	color: #EEEEEE;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	background-color: #2F2E2E;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: Didot-Italic, serif;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+a.mainNavLinkDisabled{
+	color: #EEEEEE;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	background-color: #2F2E2E;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: Didot-Italic, serif;
+  font-size: 18px;
+  line-height: 50px;
+  cursor: not-allowed;
+}
+
+a.mainNavLink:hover{
+	background-color: #FFFFFF;
+	color: #2F2E2E;
+	-webkit-transition:background-color .3s ease-in; 
+  -moz-transition:background-color .3s ease-in; 
+  -o-transition:background-color .3s ease-in; 
+  transition:background-color .3s ease-in; 
+}
+
+a.currentNavLink{
+	background-color: #FFFFFF;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	color: #2F2E2E;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: Didot-Italic, serif;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+a.currentNavLinkDisabled{
+	background-color: #FFFFFF;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	color: #2F2E2E;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: Didot-Italic, serif;
+  font-size: 18px;
+  line-height: 50px;
+  cursor: not-allowed;
+}
+
+/*Dropdown*/
+
+p.menuSize{
+	font-size: 3px;
+}
+
+li.dropdown{
+	list-style: none;
+ 	display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 129px;
+}
+
+.dropdown-content a{
+	display: block;
+	color: #FFFFFF;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	background-color: #A0A09F;
+  font-family: Didot-Italic, serif;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.dropdown-content a:hover{
+	display: block;
+	color: #2F2E2E;
+	background-color: #FFFFFF;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	font-family: Didot-Italic, serif;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+li.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+
+/*Name Logo*/
+
+
+p.nameLogoBox{
+	width: 115px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 100px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+a.nameLogo{
+	letter-spacing: 5.25px;
+	font-family: Futura-Std-Light, serif;
+	text-decoration: rgb(47, 46, 46);
+	font-size: 21px;
+	color: #2F2E2E;
+}
+
+
+ /*Pages*/
+
+a.inParagraph{
+	color: #2F2E2E;
+}
+
+img.pagePicture{
+	display: block;
+  margin-left: auto;
+ 	margin-right: auto;
+  width: 65%;
+}
+
+img.aboutPage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+/*  width: 50%;
+*/}
+
+
+p.bigFont{
+	font-family: Didot-Italic, serif;
+	font-size: 80px;
+	color: #2F2E2E;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	line-height: normal;
+}
+
+p.bigFontProjecTitle{
+	font-family: Didot-Italic, serif;
+	font-size: 50px;
+	color: #2F2E2E;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+}
+
+p.mediumTextSize{
+	font-family: Futura-Std-Light, serif;
+	font-size: 18px;
+	color: #2F2E2E;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+}
+
+p.paragraphText{
+	font-family: Futura-Std-Light, serif;
+	font-size: 16px;
+	color: #2F2E2E;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	line-height: normal;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+
+p.paragraphHeader{
+	font-family: Futura-Std-Light, serif;
+	font-size: 27px;
+	color: #2F2E2E;
+	text-decoration: rgb(47, 46, 46);
+	text-align: center;
+	line-height: normal;
+	margin-left: 18%;
+	margin-right: 18%;
+
+}
+
+.embeddedVideo{
+	display: block;
+	margin: 0 auto;
+}
+
+ul.bulletList{
+	font-family: Futura-Std-Light, serif;
+	font-size: 16px;
+	color: #2F2E2E;
+	text-decoration: rgb(47, 46, 46);
+	text-align: left;
+	line-height: normal;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+
+p.CVHeader{
+	font-family: Futura-Std-Light, serif;
+	font-size: 27px;
+	color: #24d1ba;
+	text-decoration: rgb(36, 209, 186);
+	text-align: left;
+	line-height: normal;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+
+p.CVText{
+	font-family: Futura-Std-Light, serif;
+	font-size: 16px;
+	color: #2F2E2E;
+	text-decoration: rgb(47, 46, 46);
+	text-align: left;
+	line-height: normal;
+	margin-left: 18%;
+	margin-right: 18%;
+	line-height: 0px;
+
+}
+
+/*Video*/
+
+/* video{
+ 	height: 100%;
+ 	width: 100%;
+ }
+*/
+
+/*Footer*/
+
+footer{
+	background-color: #2F2E2E;
+	width: 100%;
+	position: absolute;
+	padding-top: 0;
+}
+
+p.footerText{
+	color: #FFFFFF;
+	font-family: Didot-Italic, serif;
+	text-decoration: rgb(255, 255, 255);
+	font-size: 45px;
+	line-height: 49.5px;
+	margin-left: 380px;
+	padding-top: 5px;
+}
+
+p.copywriteText{
+	color: #a0a09f;
+	float: right;
+	font-family: Futura-Std-Light, serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+div.linkBar{
+	float: right;
+	margin-right: 350px;
+}
+
+img.linkedInLogo{
+	float: right;
+}

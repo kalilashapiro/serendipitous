@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>serendipity</title>
+	<ul class="mainNav">
+		<li class="mainNavItem"><a href="index.html" class="mainNavLink">Home</a></li>
+		<div>
+			<li class="dropdown">
+				<a href="index.html" class="currentNavLinkDisabled">Projects</a>
+				<p class="menuSize">   </p>
+				<div class="dropdown-content">
+					<a href="spoons.html">Spoons</a>
+					<a href="when-i-was-little.html">When I Was Little</a>
+					<a href="major-key.html">Major Key</a>
+				</div>
+			</li>
+		</div>
+		<li class="mainNavItem"><a href="cv.html" class="mainNavLink">CV</a></li>
+<!-- 		<li class="mainNavItem"><a href="index.html" class="mainNavLink">Talks</a></li>
+ -->		<li class="mainNavItem"><a href="about.html" class="mainNavLink">About</a></li>
+<!-- 		<li class="mainNavItem"><a href="index.html" class="mainNavLink">Contact</a></li>
+ -->	</ul>
+	<p class="nameLogoBox"><a href="index.html" class="nameLogo"> KALILA</a><a href="index.html" class="nameLogo"> SHAPIRO</a></p>
+</head>
+
+<body>
+	
+	<div>
+	<img src="img/majorKey.jpg" alt="Major Key Logo" class="pagePicture"></img>
+	<p class="bigFontProjecTitle">Major Key</p>
+	<p class="mediumTextSize">Created at Reality, Virtually 2019</p>
+
+
+	<p class="paragraphText">Created at the Reality, Virtually Hackathon at the MIT Media Lab, Major Key is an immersive augmented reality app designed to teaches users how to play piano and read sheet music successfully. Through a variety of exercises, users of all ages will be able to strengthen their hands, improve their coordination, and pick up an instrument that is notoriously hard to learn. This project uses the Magic Leap One and Unity. A video of the working prototype can be found at the bottom of the page.</p>
+
+	<br>
+
+		<iframe class="embeddedVideo" width="480" height="270" src="https://www.youtube.com/embed/FuhKtq8BS18"></iframe>
+
+	<br>
+
+	<p class="paragraphHeader"><strong>My Role</strong></p>
+	<p class="paragraphText">I worked as the team lead and a developer. I participated in need finding and preliminary design work.</p>
+
+	<p class="paragraphHeader"><strong>Project Goals</strong></p>
+	<p class="paragraphText">We created a functional prototype that served as a basic piano practicing tool. When people wear the Magic Leap One, this prototype uses augmented reality to allow them to see the keys on their midi keyboard light up as they play it. It also has a piano learning exercise, where lines of sheet music run above the piano and players have to try to read and play before the notes disappear.</p>
+
+	<p class="paragraphHeader"><strong>Prototyping</strong></p>
+	<p class="paragraphText">To aid us with our research and to provide feedback for our eventual product, we conducted surveys of piano players of varying ages and skill levels. From there, we created an affinity board, a user journey, wireframes, and a working prototype on Magic Leap. We included songs and exercises, an AR keyboard piano model, AR light up keys, and scrolling sheet music implemented with Blender and Unity.</p>
+	<p class="paragraphText"><strong>Original Intentions and Problems</strong> - This was the first time anyone on the Major Key team had ever used the Magic Leap. As such, within the short amount of time given by the hackathon, we had to adapt a lot. Our first goal was to have the Magic Leap use finger tracking to locate where a user's hand was to correct position, and use the internal microphone to determine if they hit the right note. We learned pretty quickly that, at this iteration, the Magic Leap can only track 3 fingers instead of 5. We thought about working around that by using wearables, but that as proved infeasible as proper piano playing requires good wrist position which would also block view of fingers from sensors. This would require a work around using inverse kinematics. Additionally, the internal microphone in the Magic Leap headset was wonderful for personal input (the user's voice), but not great at picking up surrounding noises - making it hard to capture the notes of the piano. </p>
+	<p class="paragraphText"><strong>Solution</strong> - Given the limited timeframe, we decided to use a Midi Keyboard. Unity can understand midi data and that data can be manipulated easily using the open sourced code called "Midi Jack" (available on GitHub). Whether or not a note was played correctly could be validated directly within Unity - no finger tracking necessary, just pure data. We created our demo with one keyboard in mind due to time. Using Blender, we modeled an exact replica of this keyboard that users would see when they put on the headset. Players then use the Magic Leap controller to drag and drop the virtual piano over their real piano. The virtual piano would disappear, and when the real piano was played, it would look like the keys were lighting up in the augmented space.</p>
+
+	<p class="paragraphHeader"><strong>Next Steps</strong></p>
+	<p class="paragraphText">In a non-hackathon context, there are a bunch of additional features we would like to add:</p>
+
+	<ul class="bulletList">
+		<li>Usability on more than one keyboard</li>
+		<li>Lesson structures</li>
+		<li>Fun exercises to promote hand strength and flexibility</li>
+		<li>Social features where users can compete with each other to play pieces the best</li>
+		<li>Gamification of "boring" practicing tasks</li>
+		<li>Gamification of "boring" practicing tasks</li>
+	</ul>
+
+	<br></br>
+	<br></br>
+
+
+	
+</body>
+
+<footer>
+		<div>
+		<p class="footerText">Exploring and Creating</p>
+		<div class="linkBar">		
+			<img src="img/In-White-21.png" class="linkedInLogo" alt="LinkedIn Logo"> 
+			<br>
+			<p class="copywriteText">© 2021 by Kalila Shapiro</p>
+		</div>
+
+</footer>
+
+</html>
