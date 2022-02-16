@@ -227,6 +227,13 @@ img.pagePicture{
   width: 65%;
 }
 
+video.pageVideo{
+	display: block;
+  margin-left: auto;
+ 	margin-right: auto;
+}
+
+
 img.aboutPage{
   display: block;
   margin-left: auto;
